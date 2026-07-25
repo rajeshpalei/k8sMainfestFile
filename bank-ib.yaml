@@ -29,10 +29,11 @@ metadata:
   labels:
     env: bank-ib
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     env: bank-ib
   ports:
     - port: 80
       targetPort: 80
+      nodePort: 30456
 ...
