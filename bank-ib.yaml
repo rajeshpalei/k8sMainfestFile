@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: bank-ib
-          image: rajeshpalei/ib
+          image: rajeshpalei/mb
           ports:
             - containerPort: 80
 ---
