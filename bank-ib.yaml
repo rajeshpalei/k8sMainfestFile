@@ -23,8 +23,8 @@ spec:
             - containerPort: 80
           resources:
            requests:
-            cpu: "200m"
-            memory: "512Mi"
+            cpu: "100m"
+            memory: "200Mi"
 ---
 apiVersion: v1
 kind: Service
@@ -51,8 +51,8 @@ spec:
   kind: Deployment
   name: bank-ib
 
- minReplicas: 3
- maxReplicas: 5
+ minReplicas: 2
+ maxReplicas: 3
  metrics:
   - type: Resource
     resource:
