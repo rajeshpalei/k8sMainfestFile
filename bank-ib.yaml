@@ -33,7 +33,7 @@ metadata:
   labels:
     env: bank-ib
 spec:
-  type: NoadPort
+  type: NodePort
   selector:
     env: bank-ib
   ports:
